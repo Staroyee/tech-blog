@@ -12,9 +12,13 @@ Article.init (
             primaryKey: true,
             autoIncrement: true
         },
-        article_name: {
+        article_title: {
             type: DataTypes.STRING,
             allowNull: false,
+        },
+        body: {
+            type: DataTypes.STRING,
+            allowNull: false
         },
         user_id: {
             type: DataTypes.INTEGER,
