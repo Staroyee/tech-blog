@@ -26,7 +26,7 @@ Article.init (
             references: {
                 model: "user",
                 key: "id",
-            }
+            },
         },
     },
     {

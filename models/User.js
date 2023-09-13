@@ -48,8 +48,6 @@ User.init(
                 return updatedUserPass;
             },
         },
-    },
-    {
         sequelize,
         timestamps: false,
         freezeTableName: true,
