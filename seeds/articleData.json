@@ -1,17 +1,17 @@
 [
     {
       "article_title": "Music Near Me",
-      "body": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+      "article_body": "A mobile app that will send you notifications whenever a concert is playing in your area.",
       "user_id": 1
     },
     {
       "article_title": "The Ultimate Tech Quiz",
-      "body": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+      "article_body": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
       "user_id": 2
     },
     {
       "article_title": "Roll 'Em Up",
-      "body": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
+      "article_body": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
       "user_id": 3
     }
   ]

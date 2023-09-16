@@ -79,58 +79,21 @@ router.get('/article/:id', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  res.render('login', { loggedIn: req.session.loggedIn });
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('login');
 });
 
-router.get('/dashboard', (req, res) => {
-  Article.findAll({
-    where: {
-      user_id: req.session.user_id,
-    },
-    attributes: ['id', 'article_title', 'article_body', 'user_id'],
-    include: [
-      {
-        model: User,
-        as: 'user',
-        attributes: ['user_id'],
-      },
-      {
-        model: Comment,
-        as: 'comments',
-        attributes: ['id', 'comment_text', 'user_id'],
-        include: [
-          {
-            model: User,
-            as: 'user',
-            attributes: ['user_name'],
-          },
-        ],
-      },
-    ],
-  })
-    .then((dbArticleData) => {
-      if (!dbArticleData) {
-        res.status(404).json({ message: 'No articles available!' });
-        return;
-      }
-      const articles = dbArticleData.map((post) => post.get({ plain: true }));
-      res.render('dashboard', { articles, loggedIn: req.session.loggedIn });
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
+router.get('/signup', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
 
-router.get('/article', (req, res) => {
-  res.render('create-article', { loggedIn: req.session.loggedIn });
-});
-
-router.get('/edit/:id', (req, res) => {
-  res.render('edit-article', {
-    loggedIn: req.session.loggedIn,
-    article_id: req.params.id,
-  });
+  res.render('signup');
 });
 
 module.exports = router;
