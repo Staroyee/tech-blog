@@ -1,0 +1,19 @@
+<article class="article">
+    <div class="title">
+        <span>
+            <a href="/post/{{id}}">{{title}}</a>
+        </span>
+        <span style="float:right">
+            Posted by {{user.username}}
+        </span>
+            <br>
+        <span style="float:right">
+            {{comments.length}} {{format_plural "comment" comments.length}}
+        </span>
+    </div>    
+    <div class="content">
+        <p>
+            {{article_body}}
+        </p>
+    </div>
+</article>

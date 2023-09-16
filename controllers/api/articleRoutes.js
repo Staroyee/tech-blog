@@ -4,7 +4,7 @@ const withAuth = require('../../utils/withAuth');
 
 router.get('/', (req, res) => {
   Article.findAll({
-    attributes: ['id', 'body', 'article_title'],
+    attributes: ['id', 'article_body', 'article_title'],
     include: [
       {
         model: User,
@@ -32,7 +32,7 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ['id', 'body', 'article_title'],
+    attributes: ['id', 'article_body', 'article_title'],
     include: [
       {
         model: User,
@@ -64,7 +64,7 @@ router.get('/:id', (req, res) => {
 router.post('/', withAuth, (req, res) => {
   Article.create({
     article_title: req.body.article_title,
-    body: req.body.body,
+    article_body: req.body.article_body,
     user_id: req.session.user_id,
   })
     .then((dbArticleData) => res.json(dbArticleData))

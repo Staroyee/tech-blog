@@ -3,7 +3,7 @@ const { Article, User, Comment } = require('../models');
 
 router.get('/', (req, res) => {
   Article.findAll({
-    attributes: ['id', 'article_title', 'body', 'user_id'],
+    attributes: ['id', 'article_title', 'article_body', 'user_id'],
     include: [
       {
         model: User,
@@ -38,7 +38,7 @@ router.get('/article/:id', (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ['id', 'article_title', 'body', 'user_id'],
+    attributes: ['id', 'article_title', 'article_body', 'user_id'],
     include: [
       {
         model: User,
@@ -87,7 +87,7 @@ router.get('/dashboard', (req, res) => {
     where: {
       user_id: req.session.user_id,
     },
-    attributes: ['id', 'article_title', 'body', 'user_id'],
+    attributes: ['id', 'article_title', 'article_body', 'user_id'],
     include: [
       {
         model: User,

@@ -16,7 +16,7 @@ Article.init (
             type: DataTypes.STRING,
             allowNull: false,
         },
-        body: {
+        article_body: {
             type: DataTypes.STRING,
             allowNull: false
         },
