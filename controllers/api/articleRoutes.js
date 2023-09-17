@@ -50,10 +50,12 @@ router.get('/:id', (req, res) => {
   })
     .then((dbArticleData) => {
       if (!dbArticleData) {
+        console.log('Failed')
         res.status(404).json({ message: 'No article found with this id' });
         return;
       }
-      res.json(dbArticleData);
+      const articles = dbArticleData.get({ plain: true });
+      res.render('one-article', { articles, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);

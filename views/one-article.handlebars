@@ -1,0 +1,19 @@
+
+{{>articleInfo articles}}
+
+{{#if loggedIn}}
+<form class="comment-form">
+    <div>
+        <textarea name="comment-body"></textarea>
+    </div>
+    <div>
+        <button type="submit">Add comment</button>
+    </div>
+</form>
+{{/if}}
+
+{{> commentInfo articles.comments}}
+
+{{#if loggedIn}}
+<script src="/js/comment.js"></script>
+{{/if}}
