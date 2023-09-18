@@ -69,7 +69,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
         return;
       }
       const article = dbArticleAata.get({ plain: true });
-      res.render('edit-post', { article, loggedIn: true });
+      res.render('edit-article', { article, loggedIn: true });
     })
     .catch(err => {
       console.log(err);
