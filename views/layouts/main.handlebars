@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Blog</title>
+    <title>The Tech Blog</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <section class="wrapper">
+        <nav class="main-nav">
+            <span class="home"><a href="/">Home</a></span>
+            {{#if loggedIn}}
+            <a class="home" href="/dashboard">Dashboard</a>
+            <button id="logout" class="btn-no-style">Logout</button>
+            {{else}}
+            <a href="/login">Login</a>
+            {{/if}}
+        </nav>  
         <header>
             <h1>
-                <a href="/">Tech Blog</a>
+                <a class="header-title" href="/">The Tech Blog</a>
             </h1>
-            <nav>
-                <span><a href="/">Home</a></span>
-                {{#if loggedIn}}
-                <a href="/dashboard">Dashboard</a>
-                <button id="logout" class="btn-no-style">Logout</button>
-                {{else}}
-                <a href="/login">Login</a>
-                {{/if}}
-            </nav>
         </header>
         <main>
             {{{body}}}
