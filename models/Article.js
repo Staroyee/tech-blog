@@ -1,3 +1,4 @@
+//ARTICLE MODEL - TABLE DEFINITION
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection');

@@ -1,3 +1,4 @@
+//ROUTES FOR HOME { GET, POST, PUT, DELETE }
 const router = require('express').Router();
 const { Article, User, Comment } = require('../models');
 

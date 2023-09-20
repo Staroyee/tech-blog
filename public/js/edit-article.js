@@ -1,3 +1,4 @@
+// FUNCTION TO EDIT AN ARTICLE
 async function editArticleFormHandler(event) {
     event.preventDefault();
 

@@ -1,3 +1,4 @@
+//EXPORT API ROUTES
 const router = require('express').Router();
 const article = require('./articleRoutes');
 const comment = require('./commentRoutes');

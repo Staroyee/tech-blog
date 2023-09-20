@@ -1,3 +1,4 @@
+// FUNCTION TO CREATE AN ARTICLE
 async function newArticleFormHandler(event) {
     event.preventDefault();
 

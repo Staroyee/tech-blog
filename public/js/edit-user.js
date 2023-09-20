@@ -1,3 +1,4 @@
+//FUNCTION TO EDIT USER DETAILS
 async function editFormHandler(event) {
     event.preventDefault();
 

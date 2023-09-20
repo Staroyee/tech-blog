@@ -1,3 +1,4 @@
+//API ROUTES FOR ARTICLES { GET, POST, PUT, DELETE }
 const router = require('express').Router();
 const { User, Article, Comment } = require('../../models');
 const withAuth = require('../../utils/withAuth');

@@ -1,3 +1,4 @@
+// FUNCTION TO DELETE AN ARTICLE
 async function deleteFormHandler(event) {
     event.preventDefault();
 

@@ -1,3 +1,4 @@
+//ROUTES FOR DASHBOARD { GET, POST, PUT, DELETE }
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Article, User, Comment } = require('../models');
