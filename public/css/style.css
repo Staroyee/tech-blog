@@ -10,23 +10,23 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ababab;
+    color: #8a8a8a;
   }
   
   a {
     text-decoration: none;
-    color: #a7a7a7;
+    color: #ffffff;
     font-weight: bold;
     transition: color .1s;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #ffffff;
     border: 0;
     padding: 1%;
-    color: white;
+    color: #350000;
     font-weight: bold;
-    transition: background-color .1s;
+    font-size: 17px;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -40,7 +40,7 @@
   textarea, input {
     padding: .5%;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid black;
   }
   
   textarea:focus, input:focus {
@@ -94,13 +94,10 @@
   }
   
   header h1 {
-    /* font-size: auto; */
     border-radius: 8px;
     background-color: rgb(255, 255, 255);
     padding: 1.25rem;
     box-shadow: 7px 7px 7px darkgrey;
-    /* ^^^ 5px -2px */
-
     }
 
   .header-title {
@@ -122,13 +119,18 @@
    font-weight: bolder;
   }
   
+  .login-form {
+    background-color: #350000;
+    padding: 20px;
+  }
+
   .btn-no-style {
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #a7a7a7;
+    color: #ffffff;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -175,15 +177,6 @@
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
   }
   
   .comment-form {
