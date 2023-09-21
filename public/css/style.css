@@ -125,6 +125,40 @@
     padding: 20px;
   }
 
+  .signup-form {
+    background-color: #350000;
+    padding: 20px;
+  }
+
+  .signup-section {
+    padding-top: 10px;
+  }
+
+  .signup {
+    background-color: #350000;
+    padding: 0px 20px 20px 20px;
+  }
+
+  .signup-btn {
+    padding-top: 20px;
+  }
+
+  .login-btn {
+    padding: 0px 20px 20px 20px;
+    background-color: #350000;
+  }
+
+  .comment-btn {
+    padding: 10px;
+    background-color: #350000;
+    color: white;
+  }
+
+  .add-comment-btn {
+    background-color: #350000;
+    color: white;
+  }
+
   .btn-no-style {
     background: none;
     border: none;
@@ -176,8 +210,9 @@
   }
 
   .edit-link {
-    display: block;
-    margin: -1.5% 0 2% 0;
+    padding: 10px;
+    background-color: #350000;
+    color: white;
   }
   
   .comment-form {
@@ -185,18 +220,21 @@
   }
   
   .comment {
-    padding: 1%;
-    margin-bottom: 1%;
+    padding: 0px;
+    border: 5px solid #350000;
   }
-  
-  .comment:nth-child(odd) {
-    background-color: #f0f5ff;
+
+  .comment-name {
+    padding: 10px;
+    background-color: #350000;
+  }
+
+  .comment-text {
+    padding: 20px;
   }
   
   .comment .meta {
-    font-size: 90%;
-    margin-bottom: .5%;
-    opacity: .6;
+    color: white;
   }
   
   .new-article-form input, textarea {
@@ -206,6 +244,7 @@
   .edit-article-form {
     margin-bottom: 5%;
     background-color: #350000;
+    padding: 20px;
   }
 
   .row {

@@ -23,7 +23,7 @@
     {{#each articles as |article|}}
     <li>
       {{> articleInfo article}}
-      <a href="/dashboard/edit/{{article.id}}" class="edit-link">Edit article</a>
+      <a href="/dashboard/edit/{{article.id}}"><button class="edit-link"> Edit article</button></a>
     </li>
     {{/each}}
   </ol>
